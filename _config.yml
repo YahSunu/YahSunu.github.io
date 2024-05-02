@@ -99,4 +99,9 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: particlex
 
-
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: 'git'
+  repository: git@github.com:YahSunu/YahSunu.github.io.git
+  branch: main

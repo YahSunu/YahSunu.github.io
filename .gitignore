@@ -62,5 +62,3 @@ _config-local.yml
 public  
 # 
 db.json
-# 联合配置文件
-_multiconfig.yml
