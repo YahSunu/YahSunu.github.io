@@ -57,6 +57,10 @@ yarn.lock
 # hexo的本地配置
 _config-local.yml
 
-# 忽略静态目录
-public
+## 忽略hexo的一些目录和文件
+# 静态目录
+public  
+# 
 db.json
+# 联合配置文件
+_multiconfig.yml
