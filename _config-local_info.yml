@@ -1,0 +1,10 @@
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+# 多配置文件
+  # 首先将本文件名改为_config-local.yml
+  # 然后填写仓库信息
+  # 最后执行hexo generate --config _config-local.yml,_config.yml生成总配置
+deploy:
+  type: ''
+  repository: ''
+  branch: ''
