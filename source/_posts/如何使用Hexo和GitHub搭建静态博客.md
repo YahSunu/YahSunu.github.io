@@ -11,25 +11,25 @@ categories:
 
 # 前言
 
-​		使用 GitHub Pages 搭建 Hexo 静态博客网站，特点就在于完全免费使用。虽然搭建时比较麻烦，但配置完成后，基本不需要操心维护的事。
+    使用 GitHub Pages 搭建 Hexo 静态博客网站，特点就在于完全免费使用。虽然搭建时比较麻烦，但配置完成后，基本不需要操心维护的事。
 
 # 介绍
 
 ## GitHub Pages
 
-​		GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，可以在 GitHub 仓库里托管和发布自己的静态网站页面。
+    GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，可以在 GitHub 仓库里托管和发布自己的静态网站页面。
 
 - [About GitHub Pages - GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
 ## Hexo
 
-​		Hexo 是一个快速、简洁且高效的静态博客框架，基于 Node.js 运行，可以将 Markdown 文档解析渲染成静态的 HTML 网页。
+    Hexo 是一个快速、简洁且高效的静态博客框架，基于 Node.js 运行，可以将 Markdown 文档解析渲染成静态的 HTML 网页。
 
 - [Hexo](https://hexo.io/zh-cn/)
 
 ## Hexo+GitHub 文章发布原理
 
-​		在本地撰写 Markdown 格式文章后，通过 Hexo 解析文档，渲染生成具有主题样式的 HTML 静态网页，再推送到 GitHub 上完成博文的发布
+    在本地撰写 Markdown 格式文章后，通过 Hexo 解析文档，渲染生成具有主题样式的 HTML 静态网页，再推送到 GitHub 上完成博文的发布
 
 ![Hexo+GitHub文章发布流程.drawio](../assets/Hexo+GitHub文章发布流程.drawio.png)
 
@@ -44,13 +44,12 @@ categories:
 
 ### 工具
 
-​		Hexo 基于 Node.js，搭建过程中还需要使用 npm 和 git
+    Hexo 基于 Node.js，搭建过程中还需要使用 npm 和 git
 
 - [Node.js](https://nodejs.org/zh-cn)
-
 - [Git](https://git-scm.com/downloads)
 
-    分别执行下述命令检验是否安装成功
+  分别执行下述命令检验是否安装成功
 
 ```shell
 node -v
@@ -74,7 +73,7 @@ git --version
 
 ### 本机创建密钥
 
-​		终端输入以下命令生成密钥
+    终端输入以下命令生成密钥
 
 ```shell
 ssh-keygen -t rsa -C "GitHub 邮箱"
@@ -170,14 +169,15 @@ ssh-keygen -t rsa -C "GitHub 邮箱"
 ## 绑定域名（可选）（未验证）
 
     博客搭建完成使用的是 GitHub 的子域名（`用户名.github.io`），可以为 Hexo 博客绑定自己的域名替换 GitHub 域名，更加个性化和专业，也利于 SEO。
-    
-    可以使用[Namesilo](https://www.namesilo.com/?rid=d27fa32do) 进行注册
+
+可以使用[Namesilo](https://www.namesilo.com/?rid=d27fa32do) 进行注册
 
 ### 域名注册和解析
 
-- 域名注册和解析教程：[Namesilo 域名购买及使用教程](https://zhuanlan.zhihu.com/p/33921436)
+- 域名注册和解析教程：[Namesilo 域名购买及使用教程
+  ](https://zhuanlan.zhihu.com/p/33921436)
 
-    按照教程注册并解析域名，在 DNS 设置部分，删除自带的记录，然后添加 CNAME 记录将`www` 域名解析指向 `用户名.github.io`
+  按照教程注册并解析域名，在 DNS 设置部分，删除自带的记录，然后添加 CNAME 记录将 `www` 域名解析指向 `用户名.github.io`
 
 ### 绑定域名到 Hexo 博客
 
@@ -187,15 +187,15 @@ ssh-keygen -t rsa -C "GitHub 邮箱"
 
 ```shell
 hexo clean    # 清除缓存文件等
-hexo g      
-hexo s    
+hexo g    
+hexo s  
 ```
 
 ### 开启 HTTPS
 
     配置自己的域名后，需要手动开启 HTTPS。打开博客所在的 GitHub 仓库 -> 选择`Settings` -> 下拉找到 `GitHub Pages` -> 勾选 `Enforce HTTPS`。
-    
-    HTTPS 证书部署成功需要一定时间，等大概几分钟再访问域名，就可以看到域名前面的小绿锁了，HTTPS 配置完成。
+
+HTTPS 证书部署成功需要一定时间，等大概几分钟再访问域名，就可以看到域名前面的小绿锁了，HTTPS 配置完成。
 
 # 开始使用
 
@@ -230,11 +230,11 @@ categories:
 
 ## 网站设置
 
-​		包括网站名称、描述、作者、链接样式等，全部在网站目录下的 `_config.yml` 文件中，参考 [官方文档](https://hexo.io/zh-cn/docs/configuration)
+    包括网站名称、描述、作者、链接样式等，全部在网站目录下的`_config.yml` 文件中，参考 [官方文档](https://hexo.io/zh-cn/docs/configuration)
 
 ## 更换主题
 
-​		在 [Themes|Hexo](https://hexo.io/themes/) 选择一个喜欢的主题 -> 进入到themes目录下克隆对应的项目 -> 修改 `_config.yml` 中的 themes 为新注意的名称，然后发布即可
+    在[Themes|Hexo](https://hexo.io/themes/) 选择一个喜欢的主题 -> 进入到themes目录下克隆对应的项目 -> 修改 `_config.yml` 中的 themes 为新注意的名称，然后发布即可
 
 ## 常用命令
 
@@ -260,38 +260,29 @@ hexo help             # 帮助
    ```shell
    npm install hexo-toc --save
    ```
-
 2. 编写配置 `_config.yml`
 
    ```yml
    toc:
      maxdepth: 3
    ```
-
 3. **添加配置**：在需要展示目录的地方添加
 
    ```markdown
    <!-- toc -->
    ```
 
-   
-
 # 常见问题
 
 - **Hexo 设置显示文章摘要，首页不显示全文**：可以在文章中插入 `<!-- more -->` 进行分段。该代码前面的内容会作为摘要显示，而后面的内容会替换为 `Read More` 隐藏起来。
-
 - **设置网站图标**：进入 `themes/主题` 文件夹，打开 `_config.yml` 配置文件，找到 favicon 修改，一般格式为 `favicon: 图标地址` （不同主题可能略有差别）
-
 - **修改并部署后没有效果**：使用 `hexo clean` 清理后重新部署
-
 - **开启 HTTPS 后访问网站显示连接不安全**：证书还未部署生效，等待一会儿，清除浏览器缓存再试
-
 - **Mac 安装 Hexo 报错无法安装**：Mac 用户需要管理权限运行，使用下述命令安装
 
   ```shell
   sudo npm install -g hexo-cli
   ```
-
 - **npm 下载速度慢，甚至完全没反应**：更换为国内镜像源
 
   ```shell
