@@ -29,4 +29,3 @@ flagcounter_img_src: # https://s01.flagcounter.com/xxxx
 article_edit:
   enable: false #是否启用
   prefix: https://github.com/xxx/xxx/edit/master/source/  #编辑页前缀
-
